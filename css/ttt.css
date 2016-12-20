@@ -1,0 +1,93 @@
+
+html, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+ul {
+  margin: 30px auto;
+  width: 400px;
+  display: block;
+}
+
+li {
+  float: left;
+  width: 120px;
+  height: 120px;
+  border: 5px solid black;
+  background: gray;
+  cursor: pointer;
+}
+
+li:hover {
+  background: yellow;
+}
+
+figcaption {
+  float: left;
+  font-family: sans-serif;
+  font-size: 200px;
+  color: orange;
+  margin-left: 25%;
+}
+
+
+
+.ttt {
+  font-size: 0px;
+}
+
+.x,
+.o {
+  background: white;
+}
+
+.x:hover,
+.o:hover {
+  background: white;
+}
+
+.x:after,
+.o:after {
+  display: block;
+  width: 100%;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.x:after {
+  content: "x";
+  color: red;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.o:after {
+  content: "o";
+  color: blue;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.winner-x .x,
+.winner-o .o {
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+
+.game-over li{
+  background: white;
+}
